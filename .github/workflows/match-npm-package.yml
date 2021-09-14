@@ -40,4 +40,4 @@ jobs:
           mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/design-tokens .
           git add .
           git update-index --refresh 
-          git diff-index --quiet HEAD -- || ( git commit -m "Updating from source - $(date)" && git push )
+          git diff-index --quiet HEAD -- || ( git commit -m "Updating from npm package - $(date)" && git push )
