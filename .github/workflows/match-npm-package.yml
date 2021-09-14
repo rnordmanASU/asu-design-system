@@ -33,6 +33,7 @@ jobs:
       - name: Update files
         run: |
           cd $GITHUB_WORKSPACE/repo
+          git config --global user.name "Github Action"
           rm -rf components-library
           rm -rf design-tokens
           mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/components-library .
